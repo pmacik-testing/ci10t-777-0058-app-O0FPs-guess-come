@@ -1,0 +1,17 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  creationTimestamp: null
+  name: devfile-sample-onbi
+spec:
+  selector: {}
+  strategy: {}
+  template:
+    metadata:
+      creationTimestamp: null
+    spec:
+      containers:
+      - image: quay.io/pmacik-testing/ci10t-777-0058-tenant/ci10t-777-0058-app/devfile-sample-onbi@sha256:77cbbe6a1a55f7a6fca5ce8cd29ada26e2c6ef96fcdaf58687408aaf3f17eb82
+        name: my-nodejs
+        resources: {}
+status: {}
